@@ -1,0 +1,3 @@
+
+# pc:小端存储，低地址存储低字节数。总是忘
+1. print_name可以覆盖saved_rsp的2个低字节，两次函数返回之后保存的rbp值就会恢复到rsp。所以计算出need_esp后通过hex转为16进制再取后四位，再转为int，切记放入flat中的int会自动扩展到对应context.arch的位数（这里为64位）
