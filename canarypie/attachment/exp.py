@@ -1,7 +1,7 @@
 from pwn import *
 
-r=process('./canarypie')
-#r= remote("train2024.hitctf.cn",26843)
+#r=process('./canarypie')
+r= remote("train2024.hitctf.cn",26238)
 
 context.arch="amd64"# x64
 context.terminal=["tmux","splitw","-h"]
